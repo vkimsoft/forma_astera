@@ -8,3 +8,7 @@ ng add @ng-bootstrap/schematics
     "tslint.autoFixOnSave": true,
     "tslint.configFile": "tslint.json"
 }
+
+git add .
+git status
+git commit -m ""
