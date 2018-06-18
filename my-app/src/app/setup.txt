@@ -1,0 +1,10 @@
+ng add @ng-bootstrap/schematics
+
+//preference parametre
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "git.enableSmartCommit": true,
+    "files.autoSave": "onFocusChange",
+    "tslint.autoFixOnSave": true,
+    "tslint.configFile": "tslint.json"
+}
