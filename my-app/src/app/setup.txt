@@ -12,3 +12,4 @@ ng add @ng-bootstrap/schematics
 git add .
 git status
 git commit -m ""
+git push

@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { PagenotfoundModule } from './pagenotfound/pagenotfound.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ItemsModule } from './items/items.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     CoreModule,
     HomeModule,
+    ItemsModule,
     PagenotfoundModule,
     NgbModule.forRoot()
   ],
