@@ -8,6 +8,7 @@ import { HomeModule } from './home/home.module';
 import { PagenotfoundModule } from './pagenotfound/pagenotfound.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemsModule } from './items/items.module';
+import { StateDirective } from './shared/directives/state.directive';
 
 @NgModule({
   declarations: [

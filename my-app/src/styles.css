@@ -2,3 +2,13 @@
 .card {
   margin-top: 1rem;
 }
+
+.state-a-livrer{
+  color:rgb(255,0, 0)
+}
+.state-en-cours{
+  color:rgb(0,0,255)
+}
+.state-livree{
+  color:rgb(0, 255,0)
+}
