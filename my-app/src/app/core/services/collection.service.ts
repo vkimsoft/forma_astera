@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Item } from '../../shared/interfaces/item';
 import { COLLECTION } from '../collection';
 
- @Injectable({
+@Injectable({
   providedIn: 'root'
 })
 export class CollectionService {
@@ -32,6 +32,9 @@ export class CollectionService {
     this._collection = coll;
   }
 
+   public addItem(item:Item):void{
+     this._collection.push(item);
+   }
   /**
    *
    * get item from collection
