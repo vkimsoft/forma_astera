@@ -11,17 +11,17 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
 
-  public intitules=Object.values(State)
-  public newItem:Item;
-  private collection:Item[];
+  //public intitules=Object.values(State)
+  //public newItem:Item;
+  //private collection:Item[];
 
-  constructor(private collectionService:CollectionService,private router:Router) { }
+  constructor(/*private collectionService:CollectionService,private router:Router*/) { }
 
   ngOnInit() {
-    this.init();
-    this.collection=this.collectionService.collection;
+    //this.init();
+    //this.collection=this.collectionService.collection;
   }
-
+/*
   private init():void {
     this.newItem={
       id:'',
@@ -37,4 +37,5 @@ export class AddComponent implements OnInit {
     this.init();
 this.router.navigate(['/list'])
   }
+  */
 }

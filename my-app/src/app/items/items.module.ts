@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule,ReactiveFormsModule }   from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
 import { ListItemsComponent } from './containers/list-items/list-items.component';
 import { ItemComponent } from './components/item/item.component';
 import { SharedModule } from '../shared/shared.module';
@@ -12,11 +12,10 @@ import { AddItemComponent } from './containers/add-item/add-item.component';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule,
     ItemsRoutingModule,
     SharedModule
   ],
   declarations: [ListItemsComponent, ItemComponent, AddComponent, AddItemComponent],
-  exports: [ListItemsComponent]
+  exports: [ListItemsComponent,AddItemComponent]
 })
 export class ItemsModule { }

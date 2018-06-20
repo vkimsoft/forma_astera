@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { State } from '../../../shared/enums/state.enum';
+import { Item } from '../../../shared/interfaces/item';
 import { CollectionService } from '../../../core/services/collection.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-item',
@@ -10,6 +9,15 @@ import { CollectionService } from '../../../core/services/collection.service';
   styleUrls: ['./add-item.component.css']
 })
 export class AddItemComponent implements OnInit {
+  constructor(private collectionService:CollectionService, private router:Router) {
+  }
+  ngOnInit() {
+  }
+  public add(item:Item):void{
+    this.collectionService.addItem(item);
+    this.router.navigate(['/list']);
+  }
+  /*
   public form: FormGroup;
   public intitules=Object.values(State);
 
@@ -43,4 +51,5 @@ export class AddItemComponent implements OnInit {
   public isError(field:string):Boolean{
   return this.form.get(field).invalid && this.form.get(field).touched;
   }
+  */
 }
