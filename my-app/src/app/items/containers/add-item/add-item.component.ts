@@ -9,13 +9,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-item.component.css']
 })
 export class AddItemComponent implements OnInit {
-  constructor(private collectionService:CollectionService, private router:Router) {
+  constructor(private collectionService: CollectionService, private router: Router) {
   }
   ngOnInit() {
   }
-  public add(item:Item):void{
-    this.collectionService.addItem(item);
-    this.router.navigate(['/list']);
+  private getItem()  {
+
+  }
+  public add(item: Item): void {
+    this.collectionService.addItem(item).subscribe((data) => {
+      console.log(data);
+      if (data) {
+        this.router.navigate(['/items/list']);
+      }
+    });
   }
   /*
   public form: FormGroup;

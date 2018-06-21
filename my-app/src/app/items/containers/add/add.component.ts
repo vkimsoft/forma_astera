@@ -11,25 +11,26 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
 
-  //public intitules=Object.values(State)
-  //public newItem:Item;
-  //private collection:Item[];
+  // public intitules=Object.values(State)
+   public newItem: Item;
+  // private collection:Item[];
 
   constructor(/*private collectionService:CollectionService,private router:Router*/) { }
 
   ngOnInit() {
-    //this.init();
-    //this.collection=this.collectionService.collection;
+     this.init();
+    // this.collection=this.collectionService.collection;
   }
-/*
-  private init():void {
-    this.newItem={
-      id:'',
-      name:'',
-      reference:'',
-      state:State.ALIVRER
-    }
+
+  private init(): void {
+    this.newItem = {
+      id: null,
+      name: '',
+      reference: '',
+      state: State.ALIVRER
+    };
   }
+  /*
   public process():void{
     console.log(this.newItem);
     this.collectionService.addItem(this.newItem);

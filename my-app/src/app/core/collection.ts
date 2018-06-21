@@ -1,23 +1,23 @@
-import { Item } from "../shared/interfaces/item";
-import { State } from "../shared/enums/state.enum";
+import { Item } from '../shared/interfaces/item';
+import { State } from '../shared/enums/state.enum';
 
-export const COLLECTION: Item[]=[
+export const COLLECTION: Item[] = [
   {
-    id:'a1',
-    name:'Mathieu',
-    reference:'1234',
-    state:State.ALIVRER
+    id: 1,
+    name: 'Mathieu',
+    reference: '1234',
+    state: State.ALIVRER
   },
   {
-    id:'b1',
-    name:'vlad',
-    reference:'2311',
-    state:State.ENCOURS
+    id: 2,
+    name: 'vlad',
+    reference: '2311',
+    state: State.ENCOURS
   },
   {
-    id:'c1',
-    name:'Juliette',
-    reference:'3344',
-    state:State.LIVREE
+    id: 3,
+    name: 'Juliette',
+    reference: '3344',
+    state: State.LIVREE
   }
-]
+];

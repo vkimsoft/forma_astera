@@ -1,8 +1,8 @@
-import { State } from "../enums/state.enum";
+import { State } from '../enums/state.enum';
 
 export interface Item {
-  id:string
-  name:string,
-  reference:string,
-  state:State
+  id: number;
+  name: string;
+  reference: string;
+  state: State;
 }

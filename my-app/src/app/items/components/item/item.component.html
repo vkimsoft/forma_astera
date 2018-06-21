@@ -10,5 +10,6 @@
     <p class="card-text">Bon de commande N: {{item.reference | order:item.state}}</p>
     <button class="btn btn-primary" *ngIf="state.ALIVRER===item.state" (click)="changeState(state.ENCOURS)">{{state.ENCOURS}}</button>
     <button class="btn btn-primary" *ngIf="state.ENCOURS===item.state" (click)="changeState(state.LIVREE)">{{state.LIVREE}}</button>
+    <button class="btn btn-primary" [routerLink]="['/items/edit',item.id]">Edit</button>
   </div>
 </div>
